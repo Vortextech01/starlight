@@ -9,7 +9,7 @@ export default defineConfig({
     starlight({
       title: 'Starlight',
       logo: {
-        light: '/src/assets/logo-light.svg',
+        light: '/src/assets/logorun 2.png',
         dark: '/src/assets/Copia-de-Encabezado-email-SAPI-unscreen.gif',
         replacesTitle: true,
       },
