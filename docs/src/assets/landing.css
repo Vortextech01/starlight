@@ -1,31 +1,67 @@
+/* Default Variable Values */
 :root {
-    --purple-hsl: 255, 60%, 60%;
-    --overlay-blurple: hsla(var(--purple-hsl), 0.2);
+  --purple-hsl: 255, 60%, 60%;
+  --overlay-blurple: hsla(var(--purple-hsl), 0.2);
 }
 
-:root[data-theme='light'] {
-    --purple-hsl: 255, 85%, 65%;
+/* Dark Theme */
+:root[data-theme="dark"] {
+  --purple-hsl: 255, 90%, 45%;
 }
 
+/* Light Theme */
+:root[data-theme="light"] {
+  --purple-hsl: 255, 85%, 65%;
+}
+
+/* Background Styles */
 [data-has-hero] .page {
-    background-color: #f2f2f2;
-    background-image: url('./85A1CC9B-11B7-453C-8462-07A71ECCEC1E.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+  radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh /
+  105vw 200vh,
+  radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50%
+  calc(100% + 20rem) / 60rem 30rem;
 
-    /* Light theme */
-    @media (prefers-color-scheme: light) {
-        background-image: url('./FA6F8B38-B4A5-4A10-880A-310EB08A1DB3.jpeg');
-    } 
+  background-size: cover;
 }
 
+/* Dark Theme Background Image */
+:root[data-theme="dark"] [data-has-hero] .page {
+  background-image: url("path/to/dark/image");
+}
+
+/* Light Theme Background Image */
+:root[data-theme="light"] [data-has-hero] .page {
+  background-image: url("path/to/light/image");
+}
+
+/* Header Styles */
 [data-has-hero] header {
-    border-bottom: 1px solid transparent;
-    background-color: transparent;
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+
 }
 
+/* Image Filter Effect */
 [data-has-hero] .hero > img {
-    filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+  filter: drop-shadow(0 0 3rem var(--overlay-blurple));
 }
+
+/* Media Queries */
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) [data-has-hero] .page {
+    background-image: url("path/to/light/image");
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-has-hero] .page {
+    background-image: url("path/to/dark/image");
+  }
+}
+
+/* Rest of your CSS goes here */
+
