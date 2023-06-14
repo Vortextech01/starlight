@@ -15,7 +15,6 @@ const processedContent = await fileTreeProcessor.process({
   value: content,
   data: { directoryLabel: 'Directory' },
 });
----
 
 <file-tree set:html={processedContent} data-pagefind-ignore />
 
@@ -31,6 +30,8 @@ const processedContent = await fileTreeProcessor.process({
     font-size: var(--sl-text-xs);
     font-family: var(--__sb-font-mono);
     overflow-x: auto;
+    background-image: url('/path/to/image.jpg');
+    background-size: cover;
   }
 
   file-tree .directory > details,
