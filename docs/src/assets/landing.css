@@ -9,13 +9,13 @@
 
 [data-has-hero] .page {
     background-color: #f2f2f2;
-    background-image: url('./DAD03DE5-C565-4881-B4C6-523986884342.jpeg');
+    background-image: url('./85A1CC9B-11B7-453C-8462-07A71ECCEC1E.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 
     /* Light theme */
     @media (prefers-color-scheme: light) {
-        background-image: url('./1A2B7EE7-7305-40D2-80DF-99C4CFC111B3.jpeg');
+        background-image: url('./FA6F8B38-B4A5-4A10-880A-310EB08A1DB3.jpeg');
     } 
 }
 
