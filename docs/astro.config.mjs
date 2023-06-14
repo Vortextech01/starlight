@@ -10,7 +10,7 @@ export default defineConfig({
       title: 'Starlight',
       logo: {
         light: '/src/assets/logo-light.svg',
-        dark: '/src/assets/logo-dark.svg',
+        dark: '/src/assets/Copia-de-Encabezado-email-SAPI-unscreen.gif',
         replacesTitle: true,
       },
       editLink: {
