@@ -27,12 +27,12 @@
 
 /* Dark Theme Background Image */
 :root[data-theme="dark"] [data-has-hero] .page {
-  background-image: url("path/to/dark/image");
+  background-image: url("./2C76575A-92FE-4131-898B-55513403945D.jpeg");
 }
 
 /* Light Theme Background Image */
 :root[data-theme="light"] [data-has-hero] .page {
-  background-image: url("path/to/light/image");
+  background-image: url("./332AECC3-6ED6-4433-8806-48FCD2865977.jpeg");
 }
 
 /* Header Styles */
