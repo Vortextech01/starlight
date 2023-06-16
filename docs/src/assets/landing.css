@@ -5,12 +5,12 @@
 
 :root[data-theme='light'] {
 --purple-hsl: 255, 85%, 65%;
---bg-image: url('./332AECC3-6ED6-4433-8806-48FCD2865977.jpeg');
+--bg-image: url('./55E1F183-A8CF-41EC-A71D-489E7075C661.jpeg');
 background-size: cover;
 }
 
 :root[data-theme='dark'] {
---bg-image: url('./2C76575A-92FE-4131-898B-55513403945D.jpeg');
+--bg-image: url('./79F06E52-005E-4147-B0ED-A4659D8E9E30.jpeg');
 background-size: cover;
 }
 
